@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
-      <Character characters={characters}/>
+      <Character characters={characters} />
     </div>
   );
 }

@@ -8,11 +8,11 @@ const StyledCharacter = styled.h4`
   text-shadow: 1px 1px 5px #fff;
 `
 
-export default function Character(props) {
+const Character = (props) => {
 
     return (
         <div>{props.characters.map((character, idx) => <StyledCharacter key={idx}>{character.name}</StyledCharacter>)}</div>
     )
 };
 
-
+export default Character;
