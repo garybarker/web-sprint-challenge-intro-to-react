@@ -2,16 +2,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledCharacter = styled.h4`
+const StyledCharacter = styled.h3`
   width: 100%;
   color: 'black';
   text-shadow: 1px 1px 5px #fff;
 `
 
 const Character = (props) => {
+  const listNames = props.characters.map((character, idx) => <StyledCharacter key={idx}>{character.name}</StyledCharacter>);
 
     return (
-        <div>{props.characters.map((character, idx) => <StyledCharacter key={idx}>{character.name}</StyledCharacter>)}</div>
+        <div>{listNames}</div>
     )
 };
 
